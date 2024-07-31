@@ -1,6 +1,4 @@
-
-
-// src/components/Card.js
+// src/components/Card.jsx
 import React from 'react';
 
 const Card = ({ title, description, imageUrl, buttonImageUrl, moreUrl }) => {
@@ -25,4 +23,3 @@ const Card = ({ title, description, imageUrl, buttonImageUrl, moreUrl }) => {
 };
 
 export default Card;
-

@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const Header = () => {
+  
+
   return (
     <header id="nav-head" className="bg-transparent max-w-screen-lg mx-auto top-0 md:rounded-full left-0 right-0 w-full lg:top-5 flex items-center z-10 justify-center fixed">
-      <div className="container w-full">
-        <div className="flex items-center justify-between lg:w-full">
+      <div className="container w-full px-10">
+        <div className="flex items-center justify-between w-full ">
           <div className="px-4">
             <a className="font-bold font-sans text-lg text-sky-600 block py-6 tracking-wider md:opacity-0" href="#Home">Rizz</a>
           </div>
           <div className="flex items-center px-4 m-auto ">
             <button id="burger" name="burger" type="button" className="block absolute right-4 lg:hidden">
-              <span className="origin-top-left w-[30px] h-[2px] my-2 block bg-sky-950 transition duration-300 ease-in-out"></span>
+              <span className="origin-top-left w-[30px] h-[2px] my-2 block bg-sky-950 transition duration-300 ease-in-out "></span>
               <span className="w-[30px] h-[2px] my-2 block bg-sky-950 transition duration-300 ease-in-out"></span>
               <span className="origin-bottom-left w-[30px] h-[2px] my-2 block bg-sky-950 transition duration-300 ease-in-out"></span>
             </button>
