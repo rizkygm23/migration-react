@@ -47,6 +47,20 @@ const Navbar = () => {
               </ul>
             </nav>
           </div>
+          <div id='new element' className="px-4 hidden lg:block">
+            <a className="" href="#Home">
+              <button onClick={()=>{
+                window.location.href = 'mailto:rizky230504@gmail.com';
+              }} className="overflow-hidden flex animate-float buttons bottom-40 w-fullitems-center 
+                  border border-sky-500 px-4 py-4 rounded-full items-center  shadow-sky-400 font-semibold shadow-sm hover:bg-slate-100 backdrop-blur-md hover:shadow-sky-500 hover:shadow-sm hover:text-sky-400">
+                
+                <h1>
+                  Get in Touch
+                </h1>
+                
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </header>

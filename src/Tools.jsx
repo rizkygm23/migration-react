@@ -13,13 +13,17 @@ import javascript from './assets/images/javascript.png';
 import github from './assets/images/github.png';
 import termius from './assets/images/termius.png';
 
+
 const ToolsSection = () => (
   <section id="tools" className="scroll-smooth pt-36 px-10 mt-20 justify-between container grid grid-cols-1 max-w-screen-xl mx-auto">
     <h1 className="text-2xl font-sans font-bold ">
-      Tool<span className="text-sky-500">s</span>
+      Tool<span className="text-sky-500">s</span> & Skills.
     </h1>
     <div className="bg-sky-500 mt-2 h-2 rounded-full"></div>
     <div className="bg-transparent grid grid-cols-3 gap-2 mt-6 lg:grid-cols-4">
+      <div className="tools px-3 py-3 overflow-hidden rounded-xl max-w-[100px] max-h-[100px] mx-auto transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-200">
+        <img className="object-fill p-4" src='assets/images/react.png' alt="Visual Studio Code" />
+      </div>
       <div className="tools px-3 py-3 overflow-hidden rounded-xl max-w-[100px] max-h-[100px] mx-auto transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-200">
         <img className="object-fill p-4" src={vscode} alt="Visual Studio Code" />
       </div>

@@ -45,7 +45,8 @@ const cardData = [
       description: "Avail is a Web3 infrastructure layer that allows modular execution layers to scale and interoperate in a trust minimized way.",
       imageUrl: "assets/images/Avail.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://www.availproject.org/"
+      moreUrl:"https://www.availproject.org/",
+      status:"Mainnet"
     },
     {
       type: "node",
@@ -53,7 +54,8 @@ const cardData = [
       description: "True ZK should provide all three. Aleo is the first place that brings all the power of ZK under one roof.",
       imageUrl: "assets/images/aleo.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://aleo.org/"
+      moreUrl:"https://aleo.org/",
+      status:"Testnet"
     },
     {
       type: "node",
@@ -61,7 +63,8 @@ const cardData = [
       description: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2",
       imageUrl: "assets/images/bevm.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://www.bevm.io/"
+      moreUrl:"https://www.bevm.io/",
+      status:"Testnet"
     },
     {
       type: "node",
@@ -69,7 +72,8 @@ const cardData = [
       description: "Use Rivalz for decentralized data processing and storageAccess networks of Trusted Data and Intel providers.",
       imageUrl: "assets/images/rivalz.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://rivalz.ai/"
+      moreUrl:"https://rivalz.ai/",
+      status:"Testnet"
     },
     {
       type: "node",
@@ -77,7 +81,17 @@ const cardData = [
       description: "The first AI-powered network that optimizes the allocation and management of all compute across all chains to perfectly reward all contributors.",
       imageUrl: "assets/images/sonaric.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://sonaric.xyz/"
+      moreUrl:"https://sonaric.xyz/",
+      status:"Testnet"
+    },
+    {
+      type: "node",
+      title: "Dill",
+      description: "Dill aligns with the Full Danksharding technical solution in Ethereum's future roadmap, adopting core technologies such as subnet sharding, 2D EC (Erasure Coding), KZG (Kate-Zaverucha-Goldberg), and DAS (Data Availability Sampling). It provides scalability that is 10 to 100 times greater than other current DA networks.",
+      imageUrl: "assets/images/dill.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"https://andes.dill.xyz/validators?p=50&ps=25&pubkey=0x8feda7",
+      status:"Testnet"
     }
   ];
 

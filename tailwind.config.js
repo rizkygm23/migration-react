@@ -28,6 +28,14 @@ export default {
             transform: 'rotate(-360deg)'
           },
         },
+        'rotate': {
+          'from': {
+            transform: 'rotate(0deg)'
+          },
+          'to': {
+            transform: 'rotate(360deg)'
+          },
+        },
         fadeInRight: {
           '0%': {
             opacity: '0',

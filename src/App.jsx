@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -10,6 +10,8 @@ import AboutMeSection from './Aboutme'
 import ToolsSection from './Tools'
 import Bntnsa from './Bntnsa'
 import NodesSection from './Nodes'
+import FAQ from './Faq'
+import Footer from './Footer'
 // import Uiuxaps from './Uiux'
 
 
@@ -19,6 +21,7 @@ import NodesSection from './Nodes'
 
 
 function App() {
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('#nav-head');
@@ -34,32 +37,66 @@ function App() {
         if (window.scrollY > fixednav) {
           header.classList.add('navbar-fixed');
           btn.classList.add('btn-fixed');
-          scrollUpicon.classList.remove('hidden');
+          btns.classList.remove('hidden');
+      
+          
 
           textCta.classList.add('hidden');
           btns.classList.remove('rounded-xl');
           btns.classList.add('rounded-full');
+          // btns.onclick(window.scrollTo({ top: 0, behavior: 'smooth' }))
+          
         } else {
           header.classList.remove('navbar-fixed');
           btn.classList.remove('btn-fixed');
           btn.classList.remove('bg-slate-600');
-          scrollUpicon.classList.add('hidden');
+          btns.classList.add('hidden');
           textCta.classList.remove('hidden');
         }
+        
+      }
+      
+      
+    };
+    
+    const scrollToTop = () => {
+      if (window.scrollY > fixednav) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.location.href = 'mailto:youremail@example.com';
       }
     };
+    
+
+    const totop = () => {
+      
+    }
 
     const handleBurgerClick = () => {
       burger.classList.toggle('burger-active');
       navMenu.classList.toggle('hidden');
+      
     };
+
+
+
+
+
+
+
+
 
     window.addEventListener('scroll', handleScroll);
     burger.addEventListener('click', handleBurgerClick);
+    
+
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       burger.removeEventListener('click', handleBurgerClick);
+      
+
+
     };
     
   }, []);
@@ -74,6 +111,8 @@ function App() {
       <ToolsSection/>
       <UIUXSection/>
       <NodesSection/>
+      <FAQ/>
+      <Footer/>
     </div>
   )
 }

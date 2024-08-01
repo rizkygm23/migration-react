@@ -1,6 +1,7 @@
 // src/components/UIUXSection.jsx
 import React from 'react';
 import Card from './Card';
+import Cardnodes from './CardNode';
 import cardData from './cardData';
 
 
@@ -16,13 +17,14 @@ const NodesSection = () => {
       <div className="bg-sky-500 h-2 mt-2 rounded-full"></div>
       <div id="card-UIUX" className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {uiuxCards.map(card => (
-          <Card
+          <Cardnodes
             key={card.title}
             title={card.title}
             description={card.description}
             imageUrl={card.imageUrl}
             buttonImageUrl={card.buttonImageUrl}
             moreUrl={card.moreUrl}
+            status={card.status}
           />
         ))}
       </div>

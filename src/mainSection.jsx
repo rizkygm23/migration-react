@@ -1,15 +1,27 @@
 import React from 'react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const MainSection = () => {
+  
+  const [textss] = useTypewriter({
+    words: ['As a UI/UX Designer, I craft intuitive and engaging applications.',' While as a Blockchain Validator, I ensure the integrity and security of blockchain networks.'],
+    loop:{},
+    typeSpeed:50,
+    deleteSpeed:50,
+    delaySpeed:400
+
+  });
   return (
     <section className="justify-between container pt-24 grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto px-10" id="utama">
       <div className="container w-full ">
         <div className="max-w-screen-sm mx-auto grid grid-cols-1 py-11">
           <h3 className="font-sans block font-semibold text-sky-500 text-xl sm:text-2xl md:text-3xl">Hi, my name is</h3>
           <h1 className="font-sans font-bold text-gray-900 text-2xl sm:text-3xl mt-1 md:text-4xl">MUHAMMAD RIZKY.</h1>
-          <h2 className="font-sans font-medium text-gray-500 text-xl sm:text-2xl mt-4 md:text-3xl lg:mt-10">
-            As a UI/UX Designer, I craft intuitive and engaging applications, while as a Blockchain Validator, I ensure the integrity and security of blockchain networks..😎
+          <h2 className="font-sans font-medium text-gray-500 text-xl sm:text-2xl mt-4 md:text-3xl lg:mt-10 h-14">
+            {textss}
+            <span Cursor='>' > <Cursor cursorStyle='/>'/>  </span>
           </h2>
+          
         </div>
       </div>
       <div className="container card-wrapped w-96 h-96 max-w-xs overflow-hidden mx-auto bg-transparent mt-10 grid grid-cols-1 rounded-lg shadow-lg shadow-sky-200 hover:shadow-md hover:shadow-sky-300">
