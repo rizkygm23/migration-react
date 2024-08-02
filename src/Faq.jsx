@@ -1,8 +1,20 @@
 // src/FAQ.jsx
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from './fade';
+
+
+
+
 
 const DetailItem = ({ question, answer }) => (
-  <details className="group [&_summary::-webkit-details-marker]:hidden">
+  <motion.details
+  variants={fadeIn("up", 0.2)}
+              initial={"hidden"}
+              
+              whileInView={"show"}
+              viewport={{once:false, amount:0.1}}
+  className="group [&_summary::-webkit-details-marker]:hidden">
     <summary
       className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-sky-100 p-4 hover:bg-sky-50 text-gray-900"
     >
@@ -20,7 +32,7 @@ const DetailItem = ({ question, answer }) => (
     </summary>
 
     <p className="mt-4 px-4 leading-relaxed text-gray-700">{answer}</p>
-  </details>
+  </motion.details>
 );
 
 const FAQ = () => (

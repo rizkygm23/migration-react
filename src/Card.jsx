@@ -1,9 +1,19 @@
 // src/components/Card.jsx
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from './fade';
+
 
 const Card = ({ title, description, imageUrl, buttonImageUrl, moreUrl }) => {
   return (
-    <div className="relative card mt-10 rounded-3xl delay-100 duration-300 overflow-hidden bg-sky-100 max-w-screen-sm transition-transform ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-200">
+    <motion.div 
+    variants={fadeIn("right", 0.2, 0.1)}
+              initial={"hidden"}
+             
+              whileInView={"show"}
+              viewport={{once:false, amount:0.01}}
+              
+    className="relative card mt-10 rounded-3xl delay-100 duration-300 overflow-hidden bg-sky-100 max-w-screen-sm transition-transform ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-200">
       <div className="relative w-full h-64">
         <img className="absolute inset-0 w-full h-full object-cover" src={imageUrl} alt="img" />
 
@@ -19,7 +29,7 @@ const Card = ({ title, description, imageUrl, buttonImageUrl, moreUrl }) => {
         </div>
         <h2 className="mt-3 line-clamp-3 min-h-line font-sans font-medium text-balance text-slate-500 text-justify text-xl">{description}</h2>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

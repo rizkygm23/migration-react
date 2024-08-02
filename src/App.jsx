@@ -12,6 +12,7 @@ import Bntnsa from './Bntnsa'
 import NodesSection from './Nodes'
 import FAQ from './Faq'
 import Footer from './Footer'
+import { MouseTrail } from 'react-webgl-trails'
 // import Uiuxaps from './Uiux'
 
 
@@ -113,6 +114,7 @@ function App() {
       <NodesSection/>
       <FAQ/>
       <Footer/>
+      <MouseTrail rgb={[2,132,200]} />
     </div>
   )
 }
