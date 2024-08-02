@@ -8,6 +8,8 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+
+
   return (
     <header id="nav-head" className="bg-transparent max-w-screen-lg mx-auto top-0 md:rounded-full left-0 right-0 w-full lg:top-5 flex items-center z-10 justify-center fixed">
       <div className="container w-full">
@@ -51,8 +53,7 @@ const Navbar = () => {
             <a className="" href="#Home">
               <button onClick={()=>{
                 window.location.href = 'mailto:rizky230504@gmail.com';
-              }} className="overflow-hidden flex animate-float buttons bottom-40 w-fullitems-center 
-                  border border-sky-500 px-4 py-4 rounded-full items-center  shadow-sky-400 font-semibold shadow-sm hover:bg-slate-100 backdrop-blur-md hover:shadow-sky-500 hover:shadow-sm hover:text-sky-400">
+              }} className="overflow-hidden flex animate-float text-sky-900 buttons bottom-40 w-fullitems-center border border-sky-500 px-4 py-4 rounded-full items-center  shadow-sky-400 font-semibold shadow-sm hover:bg-slate-100 backdrop-blur-md hover:shadow-sky-500 hover:shadow-sm hover:text-sky-400">
                 
                 <h1>
                   Get in Touch
