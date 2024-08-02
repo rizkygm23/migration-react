@@ -16,7 +16,7 @@ const UIUXSection = () => {
               whileInView={"show"}
               viewport={{once:false, amount:0.1}}
               
-    id="uiux" className="justify-between container px-10 grid grid-cols-1 pt-36 max-w-screen-xl mx-auto mt-20">
+    id="uiux" className="justify-between md:max-w-screen-md container px-10 grid grid-cols-1 pt-36 lg:max-w-screen-xl mx-auto mt-20">
       <div>
         <h1 className="text-2xl font-sans font-bold">UI/<span className="text-sky-500">UX</span> Designer.</h1>
         <h2 className="text-xl mt-1 font-sans font-medium text-slate-600">All Works</h2>
