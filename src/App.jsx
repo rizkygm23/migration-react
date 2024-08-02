@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import UIUXSection from './UIUXSection'
+import { Analytics } from "@vercel/analytics/react"
 
 import Navbar from './Navbar'
 import MainSection from './mainSection'
@@ -115,6 +116,7 @@ function App() {
       <FAQ/>
       <Footer/>
       <MouseTrail rgb={[2,132,200]} />
+      <Analytics/>
     </div>
   )
 }
