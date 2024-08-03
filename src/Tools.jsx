@@ -30,7 +30,7 @@ const ToolsSection = () => (
       whileInView={"show"}
       viewport={{once:false, amount:0.1}}
       className="tools px-3 py-3 overflow-hidden rounded-xl max-w-[100px] max-h-[100px] mx-auto transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-200">
-        <img className="object-fill p-4" src='assets/images/react.png' alt="Visual Studio Code" />
+        <img className="object-fill p-4" src='/assets/images/react.png' alt="Visual Studio Code" />
       </motion.div>
       <motion.div
       variants={fadeIn("up", 0.4, 0.1)}
