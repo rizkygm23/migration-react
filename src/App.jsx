@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import UIUXSection from './UIUXSection'
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Navbar from './Navbar'
 import MainSection from './mainSection'
 import AboutMeSection from './Aboutme'
@@ -117,7 +117,7 @@ function App() {
       <Footer/>
       <MouseTrail rgb={[2,132,200]} />
       <Analytics/>
-      <SpeedInsights/>
+
     </div>
   )
 }
