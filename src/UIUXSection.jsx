@@ -38,4 +38,6 @@ const UIUXSection = () => {
   );
 };
 
+
+
 export default UIUXSection;
