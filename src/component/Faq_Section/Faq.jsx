@@ -1,7 +1,7 @@
 // src/FAQ.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from './fade';
+import { fadeIn } from '../../animation/fade';
 
 
 

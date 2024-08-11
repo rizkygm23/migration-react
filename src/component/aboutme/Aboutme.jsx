@@ -1,6 +1,6 @@
 // src/components/AboutMeSection.jsx
 import React from 'react';
-import { fadeIn } from './fade';
+import { fadeIn } from '../../animation/fade';
 import { motion } from 'framer-motion';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 const AboutMeSection = () => {
@@ -22,17 +22,17 @@ const AboutMeSection = () => {
         viewport={{once:false, amount:0.1}}
 
       id="aboutme"
-      className="scroll-smooth rounded-xl pt-36 pb-36 px-10 mt-20 justify-between container grid grid-cols-1 max-w-screen-xl mx-auto bg-gradient-to-b from-slate-300 to-slate-200"
+      className="scroll-smooth rounded-xl pt-36 pb-36 px-10 mt-20 justify-between container grid grid-cols-1 max-w-screen-xl mx-auto bg-gradient-to-b from-slate-300 to-slate-200 dark:from-gray-900 dark:to-[#0B0B1D]"
     >
 
-      <h1 className="text-2xl font-sans font-bold">
+      <h1 className="text-2xl font-sans font-bold dark:text-slate-200">
         About <span className="text-sky-500">Me.</span>
       </h1>
       <div className="bg-sky-500 mt-2 h-2 rounded-full"></div>
       <div className="bg-opacity-10 bg-sky-300 p-10 rounded-3xl mt-10 backdrop-blur-3xl border border-sky-300">
         <motion.h2
          whileInView={text1}
-        className="text-sm tracking-widest font-sans font-light text-slate-800 text-center sm:text-xl italic md:text-2xl lg:text-3xl">
+        className="text-sm tracking-widest font-sans font-light text-slate-800 dark:text-slate-200 text-center sm:text-xl italic md:text-2xl lg:text-3xl">
          {text1}
         </motion.h2>
       </div>

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from "react";
-import App from "./App";
+import App from "../App";
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-import { fadeIn } from './fade';
+import { fadeIn } from '../../animation/fade';
 const MainSection = () => {
   
   const [textss] = useTypewriter({
