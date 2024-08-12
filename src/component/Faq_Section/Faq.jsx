@@ -31,13 +31,13 @@ const DetailItem = ({ question, answer }) => (
       </svg>
     </summary>
 
-    <p className="mt-4 px-4 leading-relaxed text-gray-700">{answer}</p>
+    <p className="mt-4 px-4 leading-relaxed text-gray-700 dark:text-[#c0c0c0]">{answer}</p>
   </motion.details>
 );
 
 const FAQ = () => (
-  <section id="faq" className="pt-36 font-sans px-10 max-w-screen-xl mx-auto pb-96">
-    <div className="space-y-4">
+  <section id="faq" className="pt-36 font-sans px-10 max-w-screen-xl mx-auto pb-96 ">
+    <div className="space-y-4 ">
       <DetailItem 
         question="What services do you offer as a UI/UX Designer?"
         answer="I offer a range of services including user research, wireframing, prototyping, user interface design, user experience design, and usability testing. My goal is to create intuitive and engaging digital experiences that meet both user needs and business objectives."

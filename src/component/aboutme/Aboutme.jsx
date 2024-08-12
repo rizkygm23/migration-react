@@ -26,10 +26,10 @@ const AboutMeSection = () => {
     >
 
       <h1 className="text-2xl font-sans font-bold dark:text-slate-200">
-        About <span className="text-sky-500">Me.</span>
+        About <span className="text-sky-500 dark:text-[#58A6AB]">Me.</span>
       </h1>
-      <div className="bg-sky-500 mt-2 h-2 rounded-full"></div>
-      <div className="bg-opacity-10 bg-sky-300 p-10 rounded-3xl mt-10 backdrop-blur-3xl border border-sky-300">
+      <div className="bg-sky-500 dark:bg-[#58A6AB] mt-2 h-2 rounded-full"></div>
+      <div className="bg-opacity-10 bg-sky-300 p-10 rounded-3xl mt-10 backdrop-blur-3xl border border-sky-300 dark:border-[#58A6AB]">
         <motion.h2
          whileInView={text1}
         className="text-sm tracking-widest font-sans font-light text-slate-800 dark:text-slate-200 text-center sm:text-xl italic md:text-2xl lg:text-3xl">

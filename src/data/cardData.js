@@ -68,6 +68,15 @@ const cardData = [
     },
     {
       type: "node",
+      title: "Dill",
+      description: "Dill aligns with the Full Danksharding technical solution in Ethereum's future roadmap, adopting core technologies such as subnet sharding, 2D EC (Erasure Coding), KZG (Kate-Zaverucha-Goldberg), and DAS (Data Availability Sampling). It provides scalability that is 10 to 100 times greater than other current DA networks.",
+      imageUrl: "assets/images/dill.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"https://andes.dill.xyz/validators?p=50&ps=25&pubkey=0x8feda7",
+      status:"Testnet"
+    },
+    {
+      type: "node",
       title: "Rivalz",
       description: "Use Rivalz for decentralized data processing and storageAccess networks of Trusted Data and Intel providers.",
       imageUrl: "assets/images/rivalz.png",
@@ -84,15 +93,7 @@ const cardData = [
       moreUrl:"https://sonaric.xyz/",
       status:"Testnet"
     },
-    {
-      type: "node",
-      title: "Dill",
-      description: "Dill aligns with the Full Danksharding technical solution in Ethereum's future roadmap, adopting core technologies such as subnet sharding, 2D EC (Erasure Coding), KZG (Kate-Zaverucha-Goldberg), and DAS (Data Availability Sampling). It provides scalability that is 10 to 100 times greater than other current DA networks.",
-      imageUrl: "assets/images/dill.png",
-      buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://andes.dill.xyz/validators?p=50&ps=25&pubkey=0x8feda7",
-      status:"Testnet"
-    }
+    
   ];
 
 
