@@ -11,6 +11,7 @@ const Navbar = () => {
     
   if (parsePath === "/node" ) {
     isVisible = 'hidden';
+    localStorage.setItem('theme', 'dark');
   }
 
 
