@@ -21,7 +21,7 @@ const NodePage = () => {
               
               whileInView={"show"}
               viewport={{once:false, amount:0.1}}
-    id="nodes" className="justify-between md:max-w-screen-md container px-10 grid grid-cols-1 pt-36 lg:max-w-screen-xl mx-auto mt-20 bg-slate-100 bg-opacity-0">
+    id="nodes" className="justify-between md:max-w-screen-md container px-10 grid grid-cols-1 pt-10 lg:max-w-screen-xl mx-auto mt-20 bg-slate-100 bg-opacity-0">
       <div className='mx-auto text-center'>
         <h1 className=" text-3xl   md:text-7xl font-sans dark:text-slate-200  font-bold">Block<span className="text-sky-500 dark:text-[#58A6AB]">chain</span> Validator</h1>
         <p className="text-sm mt-5 font-sans font-medium text-[#6C6C6C] max-w-screen-md">A blockchain validator is a network node that helps process and validate transaction blocks on the platform so that they can be added to the permanent ledger of the blockchain. When using the term “validator,” some people presume the nodes validating transactions on PoS blockchains. They contrast it with the term “miner,” used on PoW blockchain platforms. <span><a href='https://phemex.com/academy/blockchain-validator-process' className="text-sky-500 dark:text-[#58A6AB]">Read More</a></span></p>
