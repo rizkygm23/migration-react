@@ -21,7 +21,7 @@ const ToggledarkXl = () => {
   return (
     <label
       htmlFor="AcceptConditions"
-      className="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-300 dark:bg-gray-800 transition [-webkit-tap-highlight-color:_transparent] peer-checked:bg-green-500"
+      className={`relative  h-8 w-14 cursor-pointer inline-block rounded-full bg-gray-300 dark:bg-gray-800 transition [-webkit-tap-highlight-color:_transparent] peer-checked:bg-green-500  `}
     >
       <input
         type="checkbox"

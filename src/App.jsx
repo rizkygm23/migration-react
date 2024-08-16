@@ -1,6 +1,7 @@
 import { useEffect} from 'react'
 import reactLogo from './assets/images/react.svg'
 import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import UIUXSection from './component/UIUX_Section/UIUXSection'
 import { Analytics } from "@vercel/analytics/react"
@@ -14,6 +15,8 @@ import NodesSection from './component/Node_Section/Nodes'
 import FAQ from './component/Faq_Section/Faq'
 import Footer from './component/Footer/Footer'
 import { MouseTrail } from 'react-webgl-trails'
+import ParticlesComponent from './component/background/particless';
+import NodePage from './component/Node_Section/Nodepage';
 // import Uiuxaps from './Uiux'
 
 
@@ -33,6 +36,8 @@ function App() {
       const scrollUpicon = document.getElementById('scroll-up-icon');
       const burger = document.querySelector('#burger');
       const navMenu = document.querySelector('#nav-menu');
+      const parsePath = window.location.pathname;
+
       
       if (header && btn && btns && textCta && scrollUpicon) {
         const fixednav = header.offsetTop;
@@ -40,9 +45,6 @@ function App() {
           header.classList.add('navbar-fixed');
           btn.classList.add('btn-fixed');
           btns.classList.remove('hidden');
-      
-          
-
           textCta.classList.add('hidden');
           btns.classList.remove('rounded-xl');
           btns.classList.add('rounded-full');
@@ -60,6 +62,7 @@ function App() {
       
       
     };
+
     
     const scrollToTop = () => {
       if (window.scrollY > fixednav) {
@@ -105,21 +108,41 @@ function App() {
 
 
   return (
-    <div>
-      <Navbar/>
-      <MainSection/>
-      <Bntnsa/>
-      <AboutMeSection/>
-      <ToolsSection/>
-      <NodesSection/>
-      <UIUXSection/>
-      <FAQ/>
-      <Footer/>
-      <MouseTrail rgb={[2,132,200]} />
-      <Analytics/>
-      <SpeedInsights/>
+    <Router>
+      <div 
+      // className='max-w-screen-lg mx-auto'
+      >
+        <Navbar  />
+        <Routes>
+          <Route path="/" element={
+            <>
+              
+              <Bntnsa />
+              <MainSection />
+              <AboutMeSection />
+              <ToolsSection />
+              <NodesSection />
+              <UIUXSection />
+              <FAQ />
+              <Footer />
+              <MouseTrail rgb={[2,132,200]} />
+              <Analytics />
+              <SpeedInsights />
+            </>
+          }/>
+          <Route path="/node" element={
+            <>
+              
+              <ParticlesComponent id='particles' />
+              <NodePage />
+           
+              
 
-    </div>
+            </>
+          }/>  {/* Halaman Detail */}
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

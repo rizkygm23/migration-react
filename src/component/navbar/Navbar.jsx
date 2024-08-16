@@ -2,13 +2,22 @@
 import React, { useState } from 'react';
 import Toggledark from '../../toggle/toggledark';
 import ToggledarkXl from '../../toggle/toggledark';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const parsePath = useLocation().pathname;
+  let isVisible = ''
+    
+  if (parsePath === "/node" ) {
+    isVisible = 'hidden';
+  }
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
 
 
 
@@ -34,7 +43,7 @@ const Navbar = () => {
             <nav className={`${isOpen ? 'block' : 'hidden'}  absolute p-4 right-4 top-20 py-5  bg-slate-100 dark:bg-slate-800 dark:lg:bg-transparent shadow-lg rounded-lg  max-w-fit lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none `} id="nav-menu">
               <ul className="block lg:flex max-w-fit ">
                 <li className="py-3 px-3 rounded-lg hover:bg-slate-200 group md:hover:bg-transparent items-center">
-                  <a className="my-auto font-medium font-sans text-black dark:text-[#58A6AB] group-hover:text-sky-500 dark:group-hover:text-[#58A6AB]" href="#aboutme">About Me 🔍
+                  <a className="my-auto font-medium font-sans text-black dark:text-[#58A6AB] group-hover:text-sky-500 dark:group-hover:text-[#58A6AB]" href="/#aboutme">About Me 🔍
                     <div className="rounded-lg w-full h-0.5 bg-sky-500 dark:bg-[#58A6AB] scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out group-hover:h-1"></div>
                   </a>
                 </li>
@@ -48,8 +57,8 @@ const Navbar = () => {
                     <div className="rounded-lg w-full h-0.5 bg-sky-500 dark:bg-[#58A6AB] scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out group-hover:h-1"></div>
                   </a>
                 </li>
-                <div className="py-3 px-3 rounded-lg mr-1 hover:bg-slate-200 group md:hover:bg-transparent right-0">
-                  <Toggledark />
+                <div className={`py-3 px-3 rounded-lg mr-1 ${isVisible} hover:bg-slate-200 group md:hover:bg-transparent right-0`}>
+                  <Toggledark  />
                 </div>
 
         

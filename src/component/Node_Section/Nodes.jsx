@@ -44,7 +44,7 @@ const NodesSection = () => {
       <div>
       
     </div>
-    <ButtonMore url={'/nodes'}/>
+    <ButtonMore url={'/node'}/>
     </motion.section>
 
     
