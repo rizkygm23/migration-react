@@ -17,6 +17,8 @@ import Footer from './component/Footer/Footer'
 import { MouseTrail } from 'react-webgl-trails'
 import ParticlesComponent from './component/background/particless';
 import NodePage from './component/Node_Section/Nodepage';
+import Pageui from './component/UIUX_Section/Pageui';
+
 
 // import Uiuxaps from './Uiux'
 
@@ -134,7 +136,8 @@ function App() {
             <>
               
               <ParticlesComponent id='particles' />
-              <NodePage />
+              <Pageui />
+              
            
               
 

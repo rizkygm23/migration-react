@@ -9,7 +9,7 @@ const Navbar = () => {
   const parsePath = useLocation().pathname;
   let isVisible = ''
     
-  if (parsePath === "/node" ) {
+  if (parsePath === "/node" || parsePath === "/uiux" ) {
     isVisible = 'hidden';
     localStorage.setItem('theme', 'dark');
   }
@@ -49,12 +49,12 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="py-3 px-3 rounded-lg hover:bg-slate-200 group md:hover:bg-transparent">
-                  <a className="my-auto font-medium font-sans group-hover:text-sky-500 dark:group-hover:text-[#58A6AB]" href="#uiux">UI/UX Designer 🎨
+                  <a className="my-auto font-medium font-sans group-hover:text-sky-500 dark:group-hover:text-[#58A6AB]" href="/#uiux">UI/UX Designer 🎨
                     <div className="rounded-lg w-full h-0.5 bg-sky-500 dark:bg-[#58A6AB] scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out group-hover:h-1"></div>
                   </a>
                 </li>
                 <li className="py-3 px-3 rounded-lg hover:bg-slate-200 group md:hover:bg-transparent">
-                  <a className="my-auto font-medium font-sans group-hover:text-sky-500 dark:group-hover:text-[#58A6AB]" href="#nodes">Blockchain Validator 🔐
+                  <a className="my-auto font-medium font-sans group-hover:text-sky-500 dark:group-hover:text-[#58A6AB]" href="/#nodes">Blockchain Validator 🔐
                     <div className="rounded-lg w-full h-0.5 bg-sky-500 dark:bg-[#58A6AB] scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out group-hover:h-1"></div>
                   </a>
                 </li>

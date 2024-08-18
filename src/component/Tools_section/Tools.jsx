@@ -13,7 +13,7 @@ const ToolsSection = () => (
       Tool<span className="text-sky-500 dark:text-[#58A6AB]">s</span> & Skills.
     </h1>
     <motion.div className="bg-sky-500 dark:bg-[#58A6AB] mt-2 h-2 rounded-full"></motion.div>
-    <div className="bg-transparent grid grid-cols-3 gap-2 gap-y-12 mt-16 lg:grid-cols-6">
+    <div className="bg-transparent grid grid-cols-3 gap-2 gap-y-12 pt-6 mt-16 lg:grid-cols-6">
     {DataTools.map((item, index) => (
         <Tools_item 
           key={index} 

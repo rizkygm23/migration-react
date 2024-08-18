@@ -16,7 +16,7 @@ const DetailItem = ({ question, answer }) => (
               viewport={{once:false, amount:0.1}}
   className="group [&_summary::-webkit-details-marker]:hidden">
     <summary
-      className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-sky-100 p-4 hover:bg-sky-50 text-gray-900"
+      className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-sky-100 dark:bg-[#12122B] p-4 hover:bg-sky-50 text-gray-900 dark:text-slate-100"
     >
       <h2 className="font-medium">{question}</h2>
 
