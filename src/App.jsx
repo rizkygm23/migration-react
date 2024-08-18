@@ -17,6 +17,7 @@ import Footer from './component/Footer/Footer'
 import { MouseTrail } from 'react-webgl-trails'
 import ParticlesComponent from './component/background/particless';
 import NodePage from './component/Node_Section/Nodepage';
+
 // import Uiuxaps from './Uiux'
 
 
@@ -83,25 +84,13 @@ function App() {
       
     };
 
-
-
-
-
-
-
-
-
     window.addEventListener('scroll', handleScroll);
     burger.addEventListener('click', handleBurgerClick);
     
-
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
       burger.removeEventListener('click', handleBurgerClick);
       
-
-
     };
     
   }, []);
@@ -139,7 +128,20 @@ function App() {
               
 
             </>
-          }/>  {/* Halaman Detail */}
+          }/>
+
+          <Route path="/uiux" element={
+            <>
+              
+              <ParticlesComponent id='particles' />
+              <NodePage />
+           
+              
+
+            </>
+          }/>
+          
+          
         </Routes>
       </div>
     </Router>
