@@ -18,6 +18,7 @@ import { MouseTrail } from 'react-webgl-trails'
 import ParticlesComponent from './component/background/particless';
 import NodePage from './component/Node_Section/Nodepage';
 import Pageui from './component/UIUX_Section/Pageui';
+import Searchpubkey from './data/Searchpubkey';
 
 
 // import Uiuxaps from './Uiux'
@@ -142,6 +143,16 @@ function App() {
               
 
             </>
+          }/>
+          <Route path="/dillsearch" element={
+            <>
+              <Searchpubkey/>
+
+              
+           
+              
+
+          </>
           }/>
           
           
