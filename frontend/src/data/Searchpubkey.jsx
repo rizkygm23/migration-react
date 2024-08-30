@@ -1,38 +1,36 @@
-import React, { useState } from 'react';
-
-
+import React, { useState, useEffect } from 'react';
+import { createClient } from '@supabase/supabase-js';
+const supabase = createClient("https://mnjnwyuqdxmxrafaaljl.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1uam53eXVxZHhteHJhZmFhbGpsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQyMTI2MzAsImV4cCI6MjAzOTc4ODYzMH0.DO5dtieKKPZxhc6TQ-aGZdIzWBr48vR_ONUTAnHPJ-g");
 const Searchpubkey = () => {
   const [pubkey, setPubkey] = useState('');
   const [balance, setBalance] = useState('');
+  const [latestBalance, setLatestBalance] = useState('');
   const [message, setMessage] = useState('');
-  const [latestbalance, setLatestbalance] = useState('');
+  // useEffect(() => {
+  //   
+  // }, []);
+  async function getBalance() {
+    
+    const  { data } = await supabase.from('data_validator').select('pubkey'==pubkey);
+    console.log(data[0].balance);
+    setBalance(data[0].balance).text();
+    setLatestBalance(data[0].latest_balance);
+    
+  }
 
   const handleSearch = async () => {
-    try {
-      const response = await fetch('/api/search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ pubkey: pubkey }),
-      });
-  
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-  
-      const result = await response.json();
-      setBalance(result.balance);
-      setMessage(result.balanceChanged ? 'Balance has changed!' : 'Balance is the same.');
-      setLatestbalance(result.latestbalance);
+    getBalance();
+    
+    console.log('Button clicked');
+    
 
-    } catch (error) {
-      console.log('Error occurred:', error);
-      setMessage('Error BANG data');
-    }
+    
+
   };
+
   return (
-    <div>
+    <div className='absolute grid grid-cols-1 mt-40'>
+      <h1>Search Validator</h1>
       <input 
         type="text" 
         value={pubkey} 
@@ -40,9 +38,10 @@ const Searchpubkey = () => {
         placeholder="Enter Pubkey" 
       />
       <button onClick={handleSearch}>Search</button>
+      { data[0].map((bal) => <h1 key={bal.pubkey}>{bal.balance}</h1>)}
       {balance && <div>Balance: {balance}</div>}
+      {latestBalance && <div>Latest Balance: {latestBalance}</div>}
       {message && <div>{message}</div>}
-      {latestbalance && <div> Latest balance :{latestbalance}</div>}
     </div>
   );
 };

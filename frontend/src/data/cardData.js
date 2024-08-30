@@ -44,6 +44,7 @@ const cardData = [
       title: "Avail",
       description: "Avail is a Web3 infrastructure layer that allows modular execution layers to scale and interoperate in a trust minimized way.",
       imageUrl: "assets/images/Avail.png",
+      miniImageUrl: "assets/images/mini_avail.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://www.availproject.org/",
       status:"Mainnet"
@@ -53,6 +54,7 @@ const cardData = [
       title: "Aleo",
       description: "True ZK should provide all three. Aleo is the first place that brings all the power of ZK under one roof.",
       imageUrl: "assets/images/aleo.png",
+      miniImageUrl: "assets/images/mini_aleo.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://aleo.org/",
       status:"Testnet"
@@ -62,6 +64,7 @@ const cardData = [
       title: "Bevm",
       description: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2",
       imageUrl: "assets/images/bevm.png",
+      miniImageUrl: "assets/images/mini_bevm.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://www.bevm.io/",
       status:"Testnet"
@@ -71,6 +74,7 @@ const cardData = [
       title: "Dill",
       description: "Dill aligns with the Full Danksharding technical solution in Ethereum's future roadmap, adopting core technologies such as subnet sharding, 2D EC (Erasure Coding), KZG (Kate-Zaverucha-Goldberg), and DAS (Data Availability Sampling). It provides scalability that is 10 to 100 times greater than other current DA networks.",
       imageUrl: "assets/images/dill.png",
+      miniImageUrl: "assets/images/mini_dill.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://andes.dill.xyz/validators?p=50&ps=25&pubkey=0x8feda7",
       status:"Testnet"
@@ -80,6 +84,7 @@ const cardData = [
       title: "Rivalz",
       description: "Use Rivalz for decentralized data processing and storageAccess networks of Trusted Data and Intel providers.",
       imageUrl: "assets/images/rivalz.png",
+      miniImageUrl: "assets/images/mini_rivalz.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://rivalz.ai/",
       status:"Testnet"
@@ -89,8 +94,19 @@ const cardData = [
       title: "Sonaric",
       description: "The first AI-powered network that optimizes the allocation and management of all compute across all chains to perfectly reward all contributors.",
       imageUrl: "assets/images/sonaric.png",
+      miniImageUrl: "assets/images/mini_sonaric.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://sonaric.xyz/",
+      status:"Testnet"
+    },
+    {
+      type: "node",
+      title: "Nillon",
+      description: "Nillion decentralizes trust for sensitive data in the same way that blockchains decentralized transactions.",
+      imageUrl: "assets/images/sonaric.png",
+      miniImageUrl: "assets/images/mini_nillon.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"https://nillion.com/",
       status:"Testnet"
     },
     
