@@ -47,27 +47,8 @@ const cardData = [
       miniImageUrl: "assets/images/mini_avail.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://www.availproject.org/",
-      status:"Mainnet"
-    },
-    {
-      type: "node",
-      title: "Aleo",
-      description: "True ZK should provide all three. Aleo is the first place that brings all the power of ZK under one roof.",
-      imageUrl: "assets/images/aleo.png",
-      miniImageUrl: "assets/images/mini_aleo.png",
-      buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://aleo.org/",
-      status:"Testnet"
-    },
-    {
-      type: "node",
-      title: "Bevm",
-      description: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2",
-      imageUrl: "assets/images/bevm.png",
-      miniImageUrl: "assets/images/mini_bevm.png",
-      buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://www.bevm.io/",
-      status:"Testnet"
+      status:"Mainnet",
+      role:"Light Validator"
     },
     {
       type: "node",
@@ -77,27 +58,30 @@ const cardData = [
       miniImageUrl: "assets/images/mini_dill.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://andes.dill.xyz/validators?p=50&ps=25&pubkey=0x8feda7",
-      status:"Testnet"
+      status:"Testnet",
+      role:"Full Validator"
     },
     {
       type: "node",
-      title: "Rivalz",
-      description: "Use Rivalz for decentralized data processing and storageAccess networks of Trusted Data and Intel providers.",
-      imageUrl: "assets/images/rivalz.png",
-      miniImageUrl: "assets/images/mini_rivalz.png",
+      title: "Bevm",
+      description: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2",
+      imageUrl: "assets/images/bevm.png",
+      miniImageUrl: "assets/images/mini_bevm.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://rivalz.ai/",
-      status:"Testnet"
+      moreUrl:"https://www.bevm.io/",
+      status:"Testnet",
+      role:"Full Validator"
     },
     {
       type: "node",
-      title: "Sonaric",
-      description: "The first AI-powered network that optimizes the allocation and management of all compute across all chains to perfectly reward all contributors.",
-      imageUrl: "assets/images/sonaric.png",
-      miniImageUrl: "assets/images/mini_sonaric.png",
+      title: "Aleo",
+      description: "True ZK should provide all three. Aleo is the first place that brings all the power of ZK under one roof.",
+      imageUrl: "assets/images/aleo.png",
+      miniImageUrl: "assets/images/mini_aleo.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://sonaric.xyz/",
-      status:"Testnet"
+      moreUrl:"https://aleo.org/",
+      status:"Testnet",
+      role:"Contributor"
     },
     {
       type: "node",
@@ -107,8 +91,33 @@ const cardData = [
       miniImageUrl: "assets/images/mini_nillon.png",
       buttonImageUrl: "assets/images/next.png",
       moreUrl:"https://nillion.com/",
-      status:"Testnet"
+      status:"Testnet",
+      role:"Verifier"
     },
+    {
+      type: "node",
+      title: "Rivalz",
+      description: "Use Rivalz for decentralized data processing and storageAccess networks of Trusted Data and Intel providers.",
+      imageUrl: "assets/images/rivalz.png",
+      miniImageUrl: "assets/images/mini_rivalz.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"https://rivalz.ai/",
+      status:"Testnet",
+      role:"rClient"
+
+    },
+    {
+      type: "node",
+      title: "Sonaric",
+      description: "The first AI-powered network that optimizes the allocation and management of all compute across all chains to perfectly reward all contributors.",
+      imageUrl: "assets/images/sonaric.png",
+      miniImageUrl: "assets/images/mini_sonaric.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"https://sonaric.xyz/",
+      status:"Testnet",
+      role:"Full Validator"
+    },
+
     
   ];
 

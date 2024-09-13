@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../animation/fade';
 import ButtonMore from './Btn_more';
-const Cardnodes = ({ title, description, imageUrl, buttonImageUrl, moreUrl, status, noluup, luup}) => {
+const Cardnodes = ({ title, description, imageUrl, buttonImageUrl, moreUrl, status, noluup, luup, role}) => {
     var classStatus =''
     var divStatus = ''
     
@@ -27,10 +27,13 @@ const Cardnodes = ({ title, description, imageUrl, buttonImageUrl, moreUrl, stat
       <div className="relative w-full h-64 ">
         <img className="absolute  inset-0 w-full h-full object-cover bg-sky-100 md:blur-sm hover:blur-0" src={imageUrl} alt="img" />
         
-        <div className={`absolute rounded-lg px-4 right-8 top-8 border  flex items-center ${divStatus} my-auto`}>
+        <div className={`absolute rounded-lg px-4 left-8 top-8 border  flex items-center ${divStatus} my-auto`}>
         <div className={`h-4 w-4 ${classStatus} rounded-full mr-2 `}></div>
-        <h2 className='text-center' >{status}</h2>
-
+          <h2 className='text-center' >{status}</h2>
+        </div>
+        <div className={`absolute rounded-lg px-4 left-8 top-16 border  flex items-center ${divStatus} my-auto`}>
+        <div className={`h-4 w-4 ${classStatus} rounded-full mr-2 `}></div>
+          <h2 className='text-center' >{role}</h2>
         </div>
       </div>
       <div className="p-6">

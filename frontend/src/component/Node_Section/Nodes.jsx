@@ -36,6 +36,7 @@ const NodesSection = () => {
             buttonImageUrl={card.buttonImageUrl}
             moreUrl={card.moreUrl}
             status={card.status}
+            role={card.role}  
             
             noluup={`${index >= limitindex ? 'hidden' : index >= 3 ? 'hidden md:block' : ''}`}
           />
