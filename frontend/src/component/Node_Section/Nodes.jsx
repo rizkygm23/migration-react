@@ -24,6 +24,7 @@ const NodesSection = () => {
         <h2 className="text-xl mt-1 font-sans font-medium text-[#6C6C6C]">All Works</h2>
       </div>
       <div className="bg-sky-500 dark:bg-[#58A6AB] h-2 mt-2 rounded-full"></div>
+      
       <div id="card-UIUX" className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         
         {uiuxCards.map((card, index) => (
