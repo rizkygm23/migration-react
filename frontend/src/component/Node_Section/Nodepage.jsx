@@ -8,6 +8,7 @@ import { fadeIn } from '../../animation/fade';
 import ButtonMore from './Btn_more';
 import CardnodeMin from './CardnodeMin';
 import Bntnsa from '../../button/Bntnsa';
+import Footer from '../Footer/Footer';
 
 const NodePage = () => {
   const uiuxCards = cardData.filter(card => card.type === 'node');
@@ -44,6 +45,9 @@ const NodePage = () => {
       
     </div>
     <Bntnsa/>
+
+
+    <Footer/>
     
 
     
