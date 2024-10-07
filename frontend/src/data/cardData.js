@@ -57,7 +57,7 @@ const cardData = [
       imageUrl: "assets/images/dill.png",
       miniImageUrl: "assets/images/mini_dill.png",
       buttonImageUrl: "assets/images/next.png",
-      moreUrl:"https://andes.dill.xyz/validators?p=50&ps=25&pubkey=0x8feda7",
+      moreUrl:"https://monitordill.online/",
       status:"Testnet",
       role:"Full Validator"
     },

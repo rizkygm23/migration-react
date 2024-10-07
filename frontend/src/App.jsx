@@ -127,6 +127,8 @@ function App() {
               
               <ParticlesComponent id='particles' />
               <NodePage />
+              
+              
            
               
 
@@ -157,8 +159,10 @@ function App() {
           
           
         </Routes>
+        
       </div>
     </Router>
+    
   )
 }
 
