@@ -3,7 +3,7 @@ const Btnnodepage = ({text, mt}) => {
 
     return (
         <button 
-        className={`w-full text-slate-50 mt-${mt} py-3 rounded-[5px] bg-[#171737] hover:bg-[#1f1f48]`}
+        className={`w-full text-slate-50 mt-${mt} py-3 rounded-[5px] bg-[#171737] hover:bg-[#1f1f48] `}
         >
             <h4 className="text-sm">{text}</h4>
         </button>

@@ -117,6 +117,28 @@ const cardData = [
       status:"Testnet",
       role:"Full Validator"
     },
+    {
+      type: "node",
+      title: "Chasm Scout",
+      description: "The first AI-powered network that optimizes the allocation and management of all compute across all chains to perfectly reward all contributors.",
+      imageUrl: "assets/images/sonaric.png",
+      miniImageUrl: "assets/images/mini_chasm.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"https://scout.chasm.net/dashboard",
+      status:"Testnet",
+      role:"Scout"
+    },
+    {
+      type: "node",
+      title: "Hemi",
+      description: "The first AI-powered network that optimizes the allocation and management of all compute across all chains to perfectly reward all contributors.",
+      imageUrl: "assets/images/sonaric.png",
+      miniImageUrl: "assets/images/mini_hemi.png",
+      buttonImageUrl: "assets/images/next.png",
+      moreUrl:"hemi.xyz",
+      status:"Testnet",
+      role:"PoP Miner"
+    },
 
     
   ];

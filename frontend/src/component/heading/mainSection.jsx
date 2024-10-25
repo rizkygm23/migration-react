@@ -24,7 +24,7 @@ const MainSection = () => {
         <div className="max-w-screen-sm mx-auto grid grid-cols-1 py-11">
           <h3 className="font-sans block font-semibold text-sky-500 dark:text-[#58A6AB] text-xl sm:text-2xl md:text-3xl">Hi, my name is</h3>
           <h1 className="font-sans font-bold text-gray-900 text-2xl dark:text-[#C6C6C6] sm:text-3xl mt-1 md:text-4xl">MUHAMMAD RIZKY.</h1>
-          <h2 className="font-sans font-medium text-[#6C6C6C] dark:text-[#6C6C6C] text-xl sm:text-2xl mt-4 md:text-3xl lg:mt-10 h-14">
+          <h2 className="font-sans h-fit font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#d7d2cc] to-[#304352] text-xl sm:text-2xl mt-4 md:text-3xl lg:mt-10 h-[60px] md:h-fit">
             {textss}
             <span Cursor='>' > <Cursor cursorStyle='/>'/>  </span>
           </h2>

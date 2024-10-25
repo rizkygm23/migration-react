@@ -38,14 +38,14 @@ const Cardnodes = ({ title, description, imageUrl, buttonImageUrl, moreUrl, stat
       </div>
       <div className="p-6">
         <div className="grid grid-cols-2">
-          <h1 className="text-2xl font-sans font-semibold dark:text-[#F5F4F4] mt-auto mb-auto">{title}</h1>
+          <h1 className="text-2xl font-sans font-semibold dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r from-[#f5f7fa] to-[#c3cfe2] mt-auto mb-auto">{title}</h1>
           <a className="ml-auto" href={moreUrl} target="_blank" rel="noopener noreferrer">
             <button className="dark:bg-[#58A6AB] rounded-full w-16 h-16 ml-auto hover:bg-slate-200 hover:-rotate-45 hover:transition-transform ease-in-out">
               <img className="max-w-6 mx-auto" src={buttonImageUrl} alt="" />
             </button>
           </a>
         </div>
-        <p className="mt-3 line-clamp-3 min-h-line font-sans font-light text-balance dark:text-[#C0C0C0] text-justify text-xl">{description}</p>
+        <p className="mt-3 line-clamp-3 min-h-line font-sans font-light text-balance dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r from-[#d7d2cc] to-[#304352] text-justify text-xl">{description}</p>
       </div>
       
 
