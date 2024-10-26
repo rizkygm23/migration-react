@@ -22,7 +22,7 @@ const CardnodeMin = ({ imgsrc, alt, title, detail, role }) => {
             >
             <img src={imgsrc} className="w-full h-full  text-left rounded-[5px] mx-auto" alt={alt} />
             </div>
-            <h3 className=" text-[14px] w-full  sm:col-span-2 md:text-[16px] lg:text-[24px] font-semibold text-slate-400 text-wrap text-left my-auto min-w-fit">{title}</h3>
+            <h3 className=" text-[14px] w-full  sm:col-span-2 md:text-[16px]  font-semibold text-slate-400 text-wrap text-left my-auto min-w-fit">{title}</h3>
 
             </div>
             <div className="px-2 py-2 items-center">

@@ -40,7 +40,7 @@ const AboutMeSection = () => {
         </motion.h2>
       </div> */}
 
-      <div className='grid grid-cols-1 lg:grid-cols-2 mx-auto '>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto '>
       {dataServices.map((item, index) => (
         <CardServices
           key={index}

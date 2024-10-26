@@ -11,7 +11,7 @@ const CardServices = ({ imgsrc, alt, delayy=0.1, heading, description }) => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.3 }}
-      className="mt-10"
+      className=""
     >
         <div className='text-center sm:text-left flex flex-col h-full p-5 rounded-xl bg-gradient-to-r from-[#29323c] to-[#21262c]  dark:from-[#0B0B1D/0] dark:to-[#0B0B1D/0] max-w-screen-sm'>
             <div className='grid grid-cols-1 md:grid-cols-3 mt-5'>
