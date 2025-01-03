@@ -21,6 +21,7 @@ import Pageui from './component/UIUX_Section/Pageui';
 import Searchpubkey from './data/Searchpubkey';
 
 
+
 // import Uiuxaps from './Uiux'
 
 
@@ -122,6 +123,8 @@ function App() {
               <SpeedInsights />
             </>
           }/>
+          {/* <Route path="/test" element={<>
+            <Test/></>} /> */}
           <Route path="/node" element={
             <>
               

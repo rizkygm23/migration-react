@@ -1,7 +1,6 @@
 // src/Navbar.jsx
 import React, { useState } from 'react';
 import Toggledark from '../../toggle/toggledark';
-import ToggledarkXl from '../../toggle/toggledark';
 import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
